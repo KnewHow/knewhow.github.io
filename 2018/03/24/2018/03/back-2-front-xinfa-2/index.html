@@ -6,10 +6,10 @@
 
 
 <html class="theme-next pisces use-motion" lang="zh-Hans,en,default">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +20,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -40,7 +40,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -48,9 +48,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="前端," />
+  <meta name="keywords" content="前端,">
 
 
 
@@ -84,7 +84,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="后端工程师入门前端页面重构（二）：心法 II">
 <meta property="og:url" content="http://www.knewhow.me/2018/03/24/2018/03/back-2-front-xinfa-2/index.html">
-<meta property="og:site_name" content="Blogs">
+<meta property="og:site_name" content="个人愚见">
 <meta property="og:description" content="上一篇博客，我们介绍了前端页面重构应遵循的第一个心法－「清除浮动」，那么这篇我们就来聊聊第二个心法－「语义化」 Web 应用的交互性如果你在百度或者谷歌的输入框中输入「Scala」并且按下回车，那么百度或者谷歌就会给你展示很多条和「Scala」相关的搜索结果，那么百度是如何知道这些 Web 应用是和「Scala」相关的呢？">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-04-24T09:33:33.508Z">
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://www.knewhow.me/2018/03/24/2018/03/back-2-front-xinfa-2/"/>
+  <link rel="canonical" href="http://www.knewhow.me/2018/03/24/2018/03/back-2-front-xinfa-2/">
 
 
 
 
 
-  <title>后端工程师入门前端页面重构（二）：心法 II | Blogs</title>
+  <title>后端工程师入门前端页面重构（二）：心法 II | 个人愚见</title>
   
 
 
@@ -138,7 +138,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -148,15 +148,15 @@
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Blogs</span>
+        <span class="site-title">个人愚见</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -184,7 +184,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -194,7 +194,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -204,7 +204,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -214,9 +214,19 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-书单">
+          <a href="/books" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br>
+            
+            书单
           </a>
         </li>
       
@@ -224,7 +234,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             关于
           </a>
@@ -237,7 +247,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
             搜索
           </a>
@@ -258,9 +268,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -292,21 +300,21 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.knewhow.me/2018/03/24/2018/03/back-2-front-xinfa-2/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="KnewHow">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blogs">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人愚见">
     </span>
 
     
@@ -337,7 +345,7 @@
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -348,7 +356,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
                   <a href="/categories/前端页面重构系列/" itemprop="url" rel="index">
                     <span itemprop="name">前端页面重构系列</span>
                   </a>
@@ -522,7 +530,7 @@
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">KnewHow</p>
               <p class="site-description motion-element" itemprop="description">Full Stack Web Developer</p>
@@ -535,7 +543,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -546,7 +554,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -557,7 +565,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -600,7 +608,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-应用的交互性"><span class="nav-number">1.</span> <span class="nav-text"><a href="#Web-&#x5E94;&#x7528;&#x7684;&#x4EA4;&#x4E92;&#x6027;" class="headerlink" title="Web &#x5E94;&#x7528;&#x7684;&#x4EA4;&#x4E92;&#x6027;"></a>Web &#x5E94;&#x7528;&#x7684;&#x4EA4;&#x4E92;&#x6027;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语义化"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x8BED;&#x4E49;&#x5316;" class="headerlink" title="&#x8BED;&#x4E49;&#x5316;"></a>&#x8BED;&#x4E49;&#x5316;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#精确的表达你想描述的内容"><span class="nav-number">2.1.</span> <span class="nav-text"><a href="#&#x7CBE;&#x786E;&#x7684;&#x8868;&#x8FBE;&#x4F60;&#x60F3;&#x63CF;&#x8FF0;&#x7684;&#x5185;&#x5BB9;" class="headerlink" title="&#x7CBE;&#x786E;&#x7684;&#x8868;&#x8FBE;&#x4F60;&#x60F3;&#x63CF;&#x8FF0;&#x7684;&#x5185;&#x5BB9;"></a>&#x7CBE;&#x786E;&#x7684;&#x8868;&#x8FBE;&#x4F60;&#x60F3;&#x63CF;&#x8FF0;&#x7684;&#x5185;&#x5BB9;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#处理好层级关系"><span class="nav-number">2.2.</span> <span class="nav-text"><a href="#&#x5904;&#x7406;&#x597D;&#x5C42;&#x7EA7;&#x5173;&#x7CFB;" class="headerlink" title="&#x5904;&#x7406;&#x597D;&#x5C42;&#x7EA7;&#x5173;&#x7CFB;"></a>&#x5904;&#x7406;&#x597D;&#x5C42;&#x7EA7;&#x5173;&#x7CFB;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资源的语义化"><span class="nav-number">2.3.</span> <span class="nav-text"><a href="#&#x8D44;&#x6E90;&#x7684;&#x8BED;&#x4E49;&#x5316;" class="headerlink" title="&#x8D44;&#x6E90;&#x7684;&#x8BED;&#x4E49;&#x5316;"></a>&#x8D44;&#x6E90;&#x7684;&#x8BED;&#x4E49;&#x5316;</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-应用的交互性"><span class="nav-number">1.</span> <span class="nav-text">Web 应用的交互性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语义化"><span class="nav-number">2.</span> <span class="nav-text">语义化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#精确的表达你想描述的内容"><span class="nav-number">2.1.</span> <span class="nav-text">精确的表达你想描述的内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#处理好层级关系"><span class="nav-number">2.2.</span> <span class="nav-text">处理好层级关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资源的语义化"><span class="nav-number">2.3.</span> <span class="nav-text">资源的语义化</span></a></li></ol></li></ol></div>
             
 
           </div>
